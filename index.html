@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <main>
+    <header>
+        <div class="title">My weather application</div>
+        <div class="header-container">
+            <input type="text" placeholder="Enter the city name..." id="input">
+             <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+    <div class="container">
+    <section class="weather-main" id="weather-main">
+            <div class="cityname">
+                <p id="city-name"><!--Madurai--></p>  
+            </div>
+            <div class="weather-img" id="weather-img">
+                <!-- <img src="./static/02d.svg" alt=""> -->
+            </div>
+            <div class="current-detail"> 
+            <div class="deg">
+                <p id="deg"><!--26.6°C--></p>
+            </div>
+            <div class="separator"></div>
+            <div class="current-weather-info">
+                <p id="main-description"><!--clear sky--></p>
+                <p id="description"><!--chance of thunderstorm--></p>
+            </div>
+        </div>
+           
+    </section>
+    <aside class="section2" id="section2">
+        <div class="extra-info">
+        <div class="info windspeed">
+            <p class="extra-info-title">wind speed</p>
+            <div class="extra-infos">
+                <div class="extra-info-img">
+                    <img src="./aweather api assets/wind-speed.svg" alt="" >
+                    </div>
+                    <div class="extra-info-detail">
+                        <p id="windspeed"></p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="info humidity">
+            <p class="extra-info-title">humidity</p>
+            <div class="extra-infos">
+                <div class="extra-info-img">
+                    <img src="./aweather api assets/humidity.svg" alt="">
+                    </div>
+                    <div class="extra-info-detail">
+                    <p id="humidity"></p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="info sunrise">
+            <p class="extra-info-title">sunrise</p>
+            <div class="extra-infos">
+                <div class="extra-info-img">
+                    <img src="./aweather api assets/sunrise.svg" alt="">
+                    </div>
+                    <div class="extra-info-detail">
+                        <p id="sunrise"></p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="info Sunset">
+            <p class="extra-info-title">Sunset</p>  
+            <div class="extra-infos">
+                <div class="extra-info-img">
+                    <img src="./aweather api assets/sunset.svg" alt="">
+                    </div>
+                    <div class="extra-info-detail">
+                        <p id="sunset"></p>
+                    </div>
+            </div>  
+        </div>
+
+        <div class="info pressure">
+            <p class="extra-info-title">pressure</p>
+            <div class="extra-infos">
+                  <div class="extra-info-img">
+                <img src="./aweather api assets/pressure.svg" alt="">
+                </div>
+                <div class="extra-info-detail">
+                    <p id="pressure"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info visibility">
+            <p class="extra-info-title">visibility</p>
+            <div class="extra-infos">
+                 <div class="extra-info-img">
+                <img src="./aweather api assets/visibility.svg" alt="">
+                </div>
+                <div class="extra-info-detail">
+                    <p id="visibility"></p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    </aside>
+</div>
+
+     <section id="city-not-found">
+        <div class="cross-mark" id="cross-mark">x</div>
+        <div class="city-not-found">
+            <p>check the spelling properly the city not found</p>
+        </div>
+     </section>
+
+     <section id="empty-cont">
+        <div class="cross-mark" id="empty-msg-cross-mark">x</div>
+        <div class="empty-msg">
+            <p>write something in the searchbar</p>
+        </div>
+     </section>
+
+   </main>
+    <script src="./script.js"></script>
+</body>
+</html>
