@@ -99,17 +99,12 @@ async function weaht(){
                  return weather[0].icon == ele
              })
 
-//this is method is working in github project but the next while does not works 
-//i dont know why
+
              while (mainImgContainer.firstChild) {
                 mainImgContainer.removeChild(mainImgContainer.firstChild);
             }
 
-            //this is also working
-            // while(mainImgContainer){
-            //     console.log("yes it has")
-            //     mainImgContainer.firstChild.remove()
-            // }
+           
            
             if(icon){
                 weatherImage.src=""
