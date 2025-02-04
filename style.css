@@ -32,7 +32,8 @@ header{
     /* border: 2px solid red; */
     font-size: 44px;
    text-align: center; 
-   margin-bottom: 20px;
+   /* margin-bottom: 20px; */
+   padding: 10px 10px 10px;
    color: var(--textcolor)
 }
 
@@ -72,6 +73,7 @@ header{
     color: var(--textcolor);
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 #search-btn:active{
@@ -85,16 +87,21 @@ header{
 
 
 .container{
-    /* border: 2px solid black; */
-    width: 1350px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    width: 100vw;
     margin: 20px auto;       
 }
+
 .weather-main{
     /* border: 1px solid #1c1f1d; */
-    width: 475px;
-    margin: 25px 0 0 20px;
+    width: 45vw;
+    /* margin: 25px 0 0 20px; */
+    margin: 20px auto;
+
     /* min-width: 410px; */
-    display: inline-block;
+    /* display: inline-block; */
     background-color: #dbe7f1;;         
     color: #090505;
     box-shadow: 10px 10px 10px #00000083;
@@ -164,9 +171,10 @@ header{
     gap: 30px;
     /* border: 2px solid #000;  */
     width: 50vw;
-    position: absolute;
+    /* margin: 20px auto; */
+    /* position: absolute;
     top : 200px;
-    right : 99px;
+    right : 99px; */
 }
 
 .info{
@@ -471,6 +479,8 @@ display:inline-block;
     .extra-info{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 20px;
         gap: 10px;
         column-gap: 40px;
         right: 20px;
@@ -480,7 +490,7 @@ display:inline-block;
     .info{
         width: 180px;
         height: 120px;
-        margin-bottom: 20px
+        /* margin-bottom: 20px */
     }
 
     .extra-info-title{
@@ -500,7 +510,7 @@ display:inline-block;
 @media screen and (max-width: 769px) {
     .weather-main{
         width: 290px;
-        height: 450px;
+        height: 430px;
     }
 
     .cityname p{
@@ -533,10 +543,20 @@ display:inline-block;
 
 @media screen and (max-width: 492px) {
 
-    .container{
+    /* .container{
         margin: 1px 20px;
         width: 400px;
         border: none;
+    } */
+
+    .container{
+        margin: 1px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        border: 2px solid red;
     }
 
     .title{
@@ -603,17 +623,158 @@ display:inline-block;
         display: block;
     }
 
+    /* .extra-info{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        position: relative;
+        width: 20vw;
+        top:0px;
+        left: 1px;
+    } */
+
     .extra-info{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+        row-gap: 15px;
+        /* gap: 20px; */
+        /* position: relative; */
+        width: auto;
+        /* top:0px;
+        left: 5px; */
+        /* border: 2px solid red; */
+    }
+
+    .info{
+        height: 100px;
+        width: 120px;
+    }
+
+    .extra-info-title{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .extra-infos{
+        gap:10px;
+        height: 60%;
+    }
+
+    .extra-infos:nth-child(2) .extra-info-img img{
+        width: 800%;
+    }
+
+    .extra-info-detail p{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+
+    .container{
+        margin: 1px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        border: 2px solid red;
+    }
+
+    /* .container{
+        margin: 1px auto;
+        width: 400px;
+    } */
+
+    .title{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+.header-container{
+    width: 300px;
+}
+    #input{
+        width: 270px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    #search-btn{
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    .weather-main{
+        width: 320px;
+        margin: 20px 45px 20px ;
+        display: block;
+        height: 280px;
+    }
+
+    .cityname p{
+        font-size: 30px;
+    }
+
+    .weather-img{
+        height: 20vh;
+        width: 40%;
+    }
+
+    .current-detail{
+        width: 300px;
+        gap:10px;
+        height: 100px;
+    }
+
+    .deg{
+        font-size: 28px;
+    }
+
+    .separator{
+        height: 70px;
+    }
+
+    .current-weather-info{
+        font-size: 18px;
+    }
+
+    .current-weather-info p:nth-child(1){
+        font-size: 26px;
+        margin-top: 10px;
+    }
+
+    .section2{
+        display: block;
+        width: 100%;
+        border: 2px solid blue;
+    }
+
+    /* .extra-info{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         position: relative;
         width: 20vw;
         top:0px;
         left: 5px;
+    } */
+
+    .extra-info{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+        row-gap: 15px;
+        /* gap: 20px; */
+        position: relative;
+        width: auto;
+        /* top:0px;
+        left: 5px; */
+        /* border: 2px solid red; */
     }
 
     .info{
-        height: 100px;
+        height: 80px;
         width: 120px;
     }
 
