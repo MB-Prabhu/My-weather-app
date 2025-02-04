@@ -536,13 +536,13 @@ display:inline-block;
 }
 
 
-/* @media screen and (max-width: 492px) { */
+ @media screen and (max-width: 492px) { 
 
-    /* .container{
+    .container{
         margin: 1px 20px;
         width: 400px;
         border: none;
-    } */
+    }
 
     /* .container{
         margin: 1px auto;
@@ -552,7 +552,7 @@ display:inline-block;
         flex-direction: column;
         width: 400px;
         border: 2px solid red;
-    }
+    }  */
 
     .title{
         font-size: 28px;
@@ -616,23 +616,23 @@ display:inline-block;
 
     .section2{
         display: block;
-    } */
+    }
 
-    /* .extra-info{
+    .extra-info{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         position: relative;
         width: 20vw;
         top:0px;
         left: 1px;
-    } */
+    } 
 
     /* .extra-info{
         grid-template-columns: repeat(3, 1fr);
         column-gap: 15px;
         row-gap: 15px;
         width: auto;
-    }
+    } */
 
     .info{
         height: 100px;
@@ -657,7 +657,7 @@ display:inline-block;
         font-size: 16px;
     }
 
-} */
+} 
 
 @media screen and (max-width: 426px) {
 
@@ -861,7 +861,8 @@ display:inline-block;
 
     .section2{
         display: block;
-        width: 100%;
+        width: 70%;
+        border: 2px solid red;
     }
 
     /* .extra-info{
@@ -905,7 +906,7 @@ display:inline-block;
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 321px){
     .container{
         margin: 1px auto;
         display: flex;
@@ -913,7 +914,6 @@ display:inline-block;
         justify-content: center;
         flex-direction: column;
         width: 350px;
-        padding: 0px;
     }
 
     /* .container{
@@ -926,9 +926,10 @@ display:inline-block;
         font-weight: 600;
     }
 
-.header-container{
-    width: 270px;
-}
+    .header-container{
+        width: 270px;
+    }
+
     #input{
         width: 250px;
         height: 30px;
@@ -947,11 +948,11 @@ display:inline-block;
         margin: 20px 45px 20px ;
         display: block;
         min-height: 220px;
-        height: 240px;
+        height: 250px;
     }
 
     .cityname p{
-        font-size: 26px;
+        font-size: 30px;
     }
 
     .weather-img{
@@ -966,7 +967,7 @@ display:inline-block;
     }
 
     .deg{
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .separator{
@@ -984,7 +985,8 @@ display:inline-block;
 
     .section2{
         display: block;
-        width: 100%;
+        width: 70%;
+        border: 2px solid red;
     }
 
     /* .extra-info{
