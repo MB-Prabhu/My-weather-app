@@ -700,7 +700,7 @@ display:inline-block;
         width: 320px;
         margin: 20px 45px 20px ;
         display: block;
-        height: 280px;
+        height: 300px;
     }
 
     .cityname p{
@@ -750,14 +750,11 @@ display:inline-block;
     } */
 
     .extra-info{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 15px;
         row-gap: 15px;
-        /* gap: 20px; */
-        /* position: relative; */
-        width: auto;
-        /* top:0px;
-        left: 5px; */
+        place-items: center;
+        padding: 0 0 10px;
         /* border: 2px solid red; */
     }
 
