@@ -826,8 +826,8 @@ display:inline-block;
         width: 300px;
         margin: 20px 45px 20px ;
         display: block;
-        min-height: 220px;
-        height: 700px;
+        /* min-height: 220px; */
+        height: 300px;
     }
 
     .cityname p{
