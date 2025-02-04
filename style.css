@@ -827,7 +827,7 @@ display:inline-block;
         margin: 20px 45px 20px ;
         display: block;
         min-height: 220px;
-        height: 240px;
+        height: 270px;
     }
 
     .cityname p{
@@ -877,10 +877,11 @@ display:inline-block;
     } */
 
     .extra-info{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 15px;
         row-gap: 15px;
-        width: auto;
+        place-items: center;
+        padding: 0 0 10px;
     }
 
     .info{
