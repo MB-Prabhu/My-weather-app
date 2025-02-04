@@ -986,7 +986,7 @@ display:inline-block;
     .section2{
         display: block;
         width: 80%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
 
     /* .extra-info{
