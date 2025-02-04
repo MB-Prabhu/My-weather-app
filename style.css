@@ -985,7 +985,7 @@ display:inline-block;
 
     .section2{
         display: block;
-        width: 70%;
+        width: 100%;
         border: 2px solid red;
     }
 
@@ -1004,6 +1004,7 @@ display:inline-block;
         row-gap: 15px;
         place-items: center;
         padding: 0 0 10px;
+        margin-left: 50px;
     }
 
     .info{
